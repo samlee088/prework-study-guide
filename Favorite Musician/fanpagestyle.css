@@ -40,11 +40,20 @@ footer {
   }
 
 
-h1,
-h2 {
+h1 {
     color:#4B2E83;
     text-align: center;
 }
+
+
+h2 {
+    color:#4B2E83;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
 
 
 body {
@@ -104,6 +113,7 @@ body {
  
 div.list {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 ul {
@@ -141,3 +151,13 @@ p {
     border: 5px solid gray;
     box-shadow: 5px 10px #8E44AD;
   }
+
+table{
+  margin-bottom: 200px;
+}
+
+
+
+
+
+
