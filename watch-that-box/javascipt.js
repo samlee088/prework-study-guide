@@ -1,5 +1,6 @@
 const button2 = document.getElementById('button2');
 
+
 button2.addEventListener('click', function onClick(event) {
 
     const box = document.getElementById('box');
@@ -8,6 +9,9 @@ button2.addEventListener('click', function onClick(event) {
 
 });
 
+var boxheight = 150
+var boxwidth = 150
+var opacitycounter = 0.1
 
 
 document.getElementById("button2").addEventListener("click", function(){
@@ -19,15 +23,31 @@ document.getElementById("button2").addEventListener("click", function(){
 
 document.getElementById("button1").addEventListener("click", function(){
 
-    document.getElementById("box").style.height = "250px"
-    document.getElementById("box").style.width = "250px"
+    if(boxheight > 900 && boxwidth > 900 ) {
+        boxheight = 150 ;
+        boxwidth = 150 ;
+    }
+
+    boxheight += 100
+    boxwidth += 100
+
+    document.getElementById("box").style.height = boxheight + "px"
+    document.getElementById("box").style.width = boxwidth + "px"
   
 
 });
 
 document.getElementById("button3").addEventListener("click", function() {
 
-    document.getElementById("box").style.opacity = 0.5
+    if(opacitycounter >1){
+        opacitycounter = .1
+    }
+    
+    opacitycounter += .1
+
+
+    document.getElementById("box").style.opacity = opacitycounter
+
 
 });
 
